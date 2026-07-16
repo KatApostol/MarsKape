@@ -1,0 +1,149 @@
+*{
+     margin: 0;
+     padding: 0;
+     
+}
+body{
+     background-color: #DEDEDE;
+     background-attachment: fixed;
+}
+hr{
+     width: 95%;
+     border:1px solid black;
+     margin-left: 2%;
+     margin-right: -4%;
+     color: black;
+   }
+.logo {
+     margin-left: 1%;
+     margin-top: -1%;
+     margin-bottom: -1%;
+     width: 60%;
+}
+.head{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 6px 10px;
+}
+.nav-item li {
+     list-style: none;
+     display: inline-block;
+     font-weight: 300px;
+     font-family: 'Montserrat';
+ }
+ .nav-item .nav-link li a{
+     text-decoration: none;
+     color: rgb(0, 0, 0);
+     font-size: 20px;
+     margin-left: 40px;
+     margin-right: 60px;
+     font-stretch: expanded;
+ }
+ .nav-item .nav-link li a:hover {
+     color:rgb(0,0,0);
+     padding: 5px 5px;
+     border: transparent;
+     font-size: 50px;
+     font-weight: 900px;
+ }
+.icons{
+     margin-top: -13.7%;
+     margin-left: 9%;
+     line-height: 3.5; 
+     }
+     .fa-brands{
+color:black;
+font-size: 20px;
+margin-left: 3%;
+margin-top: 1%;
+text-decoration: none;
+}
+     .fa-brands h4{
+font-family: 'Lucida Sans';     
+ margin-left: 22%;
+ margin-top: -15.5%;
+}
+.fa-brands h5{
+font-family: 'Lucida Sans';     
+ margin-left: 15%;
+ margin-top: -13%;
+ font-size: 20px;
+}
+.fa-solid{
+color:black;
+font-size: 20px;
+margin-left: 3%;
+margin-top: 1%; 
+text-decoration: none; 
+} 
+/* gmail */
+.fa-solid h4{
+ font-family: 'Lucida Sans';
+ margin-left: 10%;
+ margin-top: -7.5%;      
+}   
+.fas{
+color:black;
+font-size: 20px;
+margin-left: 3%;
+margin-top: 1%; 
+text-decoration: none;     
+}
+/* shopee */
+.fas h4{
+font-family: 'Lucida Sans';
+ margin-left: 20%;
+ margin-top: -13%;
+}
+     .icons hr {
+     text-align: left ;
+     margin-left: 0%;
+     width: 39%;   
+     }    
+     .icons h3{
+     font-size: 45px;
+     margin-left: 5%;
+     }  
+         /* logo  */ 
+     .logophoto{
+     margin-left: 37%;
+     margin-top: -97%;
+     width: 25%;
+     }
+         /* place  */
+     .place{
+     margin-left: 0%;
+     margin-top: 35%;
+     width: 100%;
+     }
+    .loader{
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+        background-color: #16191e;
+        position: absolute;
+    }
+    .loader>div{
+        height: 50px;
+        width: 50px;
+        border: 5px solid#45474b;
+        border-top-color: #593C1f;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border-radius: 50%;
+        animation: spin 1.5s infinite linear;
+    }
+    @keyframes spin{
+        100%{
+            transform:  rotate(360deg);
+        }
+    }
+   
+   
+     
+   

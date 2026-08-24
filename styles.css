@@ -2,7 +2,6 @@
    MARS KAPE HOMEPAGE
 ========================================================= */
 
-
 /* GLOBAL */
 
 * {
@@ -24,7 +23,7 @@ html {
 body {
     margin: 0;
     font-family: "Montserrat", sans-serif;
-    background: #111;
+    background-color: #111;
     overflow-x: hidden;
 }
 
@@ -39,7 +38,7 @@ body {
 
     padding: 0 !important;
 
-    background: #e5e5e5 !important;
+    background-color: #e5e5e5 !important;
 
     position: relative;
     z-index: 1000;
@@ -59,7 +58,9 @@ body {
 }
 
 
-/* BRAND */
+/* =========================================================
+   BRAND / LOGO
+========================================================= */
 
 .mars-brand {
     display: flex;
@@ -70,12 +71,6 @@ body {
 
     text-decoration: none;
 }
-
-
-/* IMPORTANT:
-   This assumes logo.png already contains
-   the full horizontal MARS KAPE logo.
-*/
 
 .mars-logo {
     display: block;
@@ -88,10 +83,21 @@ body {
 
     margin: 0;
     padding: 0;
+
+    /* logo2.png is white, so this makes it black */
+    filter: brightness(0);
+
+    transition: opacity 0.2s ease;
+}
+
+.mars-brand:hover .mars-logo {
+    opacity: 0.72;
 }
 
 
-/* NAV LINKS */
+/* =========================================================
+   NAVIGATION
+========================================================= */
 
 .mars-navbar .navbar-collapse {
     flex-grow: 1;
@@ -113,18 +119,18 @@ body {
 
 .mars-navbar .nav-link,
 .mars-navbar .nav-link:visited {
-    margin: 0 !important;
+    position: relative;
 
+    margin: 0 !important;
     padding: 8px 0 !important;
 
-    color: #252525 !important;
+    color: #292929 !important;
 
     font-family: "Montserrat", sans-serif !important;
     font-size: 15px !important;
     font-weight: 400 !important;
 
     line-height: 1.2;
-
     letter-spacing: 0;
 
     white-space: nowrap;
@@ -139,7 +145,7 @@ body {
 }
 
 
-/* ACTIVE */
+/* Active page */
 
 .mars-navbar .nav-link.active {
     color: #000 !important;
@@ -147,7 +153,7 @@ body {
 }
 
 
-/* HOVER — NO SIZE CHANGE */
+/* Hover — no size change */
 
 .mars-navbar .nav-link:hover,
 .mars-navbar .nav-link:focus,
@@ -165,6 +171,13 @@ body {
 }
 
 
+/* Remove any Bootstrap / old underline effects */
+
+.mars-navbar .nav-link::after {
+    display: none !important;
+}
+
+
 /* =========================================================
    HERO
 ========================================================= */
@@ -179,7 +192,6 @@ body {
     justify-content: center;
 
     background-image: url("./bg.jpg");
-
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -187,14 +199,22 @@ body {
     overflow: hidden;
 }
 
+
+/* Dark overlay */
+
 .hero-overlay {
     position: absolute;
     inset: 0;
 
-    background: rgba(0, 0, 0, 0.52);
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.48),
+            rgba(0, 0, 0, 0.56)
+        );
 
     z-index: 1;
 }
+
 
 .hero-container {
     position: relative;
@@ -203,8 +223,10 @@ body {
     width: 100%;
 
     display: flex;
+    align-items: center;
     justify-content: center;
 }
+
 
 .hero-content {
     width: 100%;
@@ -212,9 +234,9 @@ body {
 
     padding: 70px 25px;
 
-    text-align: center;
+    color: white;
 
-    color: #fff;
+    text-align: center;
 }
 
 
@@ -227,11 +249,16 @@ body {
 
     color: rgba(255, 255, 255, 0.72);
 
+    font-family: "Montserrat", sans-serif;
+
     font-size: 10px;
     font-weight: 500;
 
     letter-spacing: 0.22em;
+
+    text-transform: uppercase;
 }
+
 
 .hero-title {
     margin: 0;
@@ -249,23 +276,31 @@ body {
     letter-spacing: 0.04em;
 }
 
+
 .hero-subtitle {
     margin: 22px 0 25px;
 
     color: rgba(255, 255, 255, 0.92);
 
+    font-family: "Montserrat", sans-serif;
+
     font-size: 13px;
     font-weight: 500;
 
     letter-spacing: 0.30em;
+
+    text-transform: uppercase;
 }
+
 
 .hero-description {
     max-width: 700px;
 
     margin: 0 auto;
 
-    color: rgba(255, 255, 255, 0.80);
+    color: rgba(255, 255, 255, 0.82);
+
+    font-family: "Montserrat", sans-serif;
 
     font-size: 15px;
     font-weight: 400;
@@ -274,7 +309,9 @@ body {
 }
 
 
-/* DIVIDER */
+/* =========================================================
+   DIVIDER
+========================================================= */
 
 .hero-line {
     width: 260px;
@@ -284,7 +321,7 @@ body {
 
     margin: 32px auto;
 
-    background: rgba(255, 255, 255, 0.50);
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 
@@ -296,10 +333,13 @@ body {
     margin-bottom: 28px;
 }
 
+
 .store-hours h2 {
     margin: 0 0 8px;
 
     color: #fff;
+
+    font-family: "Montserrat", sans-serif;
 
     font-size: 17px;
     font-weight: 600;
@@ -307,10 +347,13 @@ body {
     letter-spacing: 0.07em;
 }
 
+
 .store-days {
     margin: 0 0 5px;
 
-    color: rgba(255, 255, 255, 0.65);
+    color: rgba(255, 255, 255, 0.67);
+
+    font-family: "Montserrat", sans-serif;
 
     font-size: 11px;
     font-weight: 500;
@@ -318,10 +361,13 @@ body {
     letter-spacing: 0.15em;
 }
 
+
 .store-time {
     margin: 0;
 
     color: #fff;
+
+    font-family: "Montserrat", sans-serif;
 
     font-size: 19px;
     font-weight: 500;
@@ -331,7 +377,7 @@ body {
 
 
 /* =========================================================
-   BUTTON
+   CTA BUTTON
 ========================================================= */
 
 .menu-button {
@@ -346,12 +392,13 @@ body {
     padding: 0 28px;
 
     border: 1px solid rgba(255, 255, 255, 0.85);
-
     border-radius: 999px;
 
-    background: transparent;
+    background-color: transparent;
 
     color: #fff;
+
+    font-family: "Montserrat", sans-serif;
 
     font-size: 11px;
     font-weight: 600;
@@ -361,13 +408,14 @@ body {
     text-decoration: none;
 
     transition:
-        background 0.25s ease,
+        background-color 0.25s ease,
         color 0.25s ease,
         transform 0.25s ease;
 }
 
+
 .menu-button:hover {
-    background: #fff;
+    background-color: #fff;
 
     color: #2c211d;
 
@@ -376,7 +424,7 @@ body {
 
 
 /* =========================================================
-   MEDIUM DESKTOP / TABLET
+   MEDIUM DESKTOP
 ========================================================= */
 
 @media (max-width: 1200px) {
@@ -388,7 +436,7 @@ body {
 
     .mars-logo {
         width: 300px;
-        height: 80px;
+        height: 82px;
     }
 
     .mars-navbar .navbar-nav {
@@ -396,7 +444,8 @@ body {
     }
 
     .mars-navbar .nav-link,
-    .mars-navbar .nav-link:hover {
+    .mars-navbar .nav-link:hover,
+    .mars-navbar .nav-link:focus {
         font-size: 13px !important;
     }
 
@@ -404,7 +453,7 @@ body {
 
 
 /* =========================================================
-   MOBILE
+   TABLET / MOBILE NAVBAR
 ========================================================= */
 
 @media (max-width: 991px) {
@@ -427,6 +476,8 @@ body {
 
     .navbar-toggler {
         margin: 0 !important;
+
+        padding: 7px 10px !important;
 
         border: 1px solid rgba(0, 0, 0, 0.3) !important;
 
@@ -474,8 +525,12 @@ body {
 @media (max-width: 520px) {
 
     .mars-logo {
-        width: 190px;
+        width: 185px;
         height: 55px;
+    }
+
+    .hero-content {
+        padding: 55px 18px;
     }
 
     .hero-title {
@@ -511,7 +566,6 @@ body {
 
     .menu-button {
         min-width: 185px;
-
         height: 48px;
 
         font-size: 10px;

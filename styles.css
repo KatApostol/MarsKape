@@ -1,444 +1,649 @@
-*{
-          margin: 0;
-          padding: 0;
-          
-     }
-     body, html {
-      height: 100%;
-    }
-     html,
-body {
-    min-height: 100%;
-}
-
-body {
-    margin: 0;
-    min-height: 100vh;
-    background-image:
-        linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
-        url("./bg.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-     p{
-          font-family: 'Arial';
-          font-size: 20px;
-          color: rgb(255, 255, 255);
-          text-align: center;
-          line-height: 1.6;
-      }
-
-     .logo {
-          margin-left: -20%;
-          margin-top: -7%;
-          width: 80%;
-     }
-     .head{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 6px 10px;
-   }
-     .nav-item li {
-          list-style: none;
-          display: inline-block;
-          font-weight: 300px;
-          font-family: 'Montserrat';
-      }
-      .nav-item .nav-link{
-          text-decoration: none;
-          color: aliceblue;
-          font-size: 20px;
-          margin-left: 60px;
-          margin-right: 50px;
-          font-stretch: expanded;
-      }
-      .nav-item .nav-link:hover {
-          color: aliceblue;
-          padding: 5px 5px;
-          border: transparent;
-          font-size: 50px;
-          font-weight: 900px;
-          font-display: block;
-      }
-      
-      .title {
-          color: white;
-          text-align: center;
-          font-size: 210px;
-          font-family: 'Montserrat';
-          font-weight: 500;
-          margin-top: 140px;
-          margin-right: 10%;
-          margin-left: 150px;
-
-      }
-      .hours h3{
-          font-family: 'Arial';
-          font-size: 44px;
-          color: rgb(255, 253, 253);
-          text-align: center;
-          font-weight: 100;
-          margin-top: 0.5%;
-          margin-bottom: 0.6%;
-      }
-      .hours p{
-        font-family: 'Arial';
-        font-size:27px;
-        color: rgb(255, 253, 253);
-        text-align: center;
-        font-weight: 100;
-        line-height: 1.6;
-
-      }
-      .time h4{
-          font-family: 'Arial';
-          color: rgb(255, 253, 253);
-          text-align: center;
-          font-weight: 300;
-          font-size: 27px;
-          line-height: 1.6;
-          margin-top: 0.5%;
-      }
-      .bttn1 {
-        list-style: none;
-        background-color: transparent;
-        margin-left: 39%;
-        margin-top: 50px;
-        display: flex;
-    }
-    .bttn1 a{
-        text-decoration: none;
-        font-family: 'Montserrat';
-        color:white;
-        border: white 2px solid;
-        font-style: inherit;
-        font-size: 23px;
-        font-weight: 100px;
-        background-color: transparent;
-        padding: 12px 28px;
-    }
-    .center-content {
-      margin-top: 10%;
-      text-align: center;
-    }
-     }
-
-
 /* =========================================================
-   MARS KAPE — HOMEPAGE POLISH / FINAL OVERRIDES
+   MARS KAPE
+   HOMEPAGE
    ========================================================= */
+
+
+/* =========================
+   GLOBAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 
 html,
 body {
+    width: 100%;
     min-height: 100%;
 }
 
+
+html {
+    scroll-behavior: smooth;
+}
+
+
 body {
     margin: 0;
-    min-height: 100vh;
-    background-image:
-        linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)),
-        url("./bg.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    font-family: 'Montserrat', sans-serif;
-    color: #fff;
+
+    font-family: "Montserrat", sans-serif;
+
+    background-color: #111;
+
+    overflow-x: hidden;
 }
 
-/* Consistent navbar */
-.navbar {
-    padding-top: 20px;
-    padding-bottom: 12px;
-}
 
-.navbar-nav {
-    gap: 18px;
-}
-
-.navbar .nav-link,
-.navbar .nav-link:visited {
-    position: relative;
-    padding: 8px 4px !important;
-    color: rgba(255, 255, 255, 0.80) !important;
-    font-family: 'Montserrat', sans-serif !important;
-    font-size: 14px !important;
-    font-weight: 500 !important;
-    line-height: 1.4 !important;
-    letter-spacing: 0.08em;
-    text-decoration: none !important;
-    transform: none !important;
-    transition: color .25s ease !important;
-}
-
-.navbar .nav-link:hover,
-.navbar .nav-link:focus,
-.navbar .nav-link:active {
-    color: #fff !important;
-    font-size: 14px !important;
-    font-weight: 500 !important;
-    transform: none !important;
-}
-
-.navbar .nav-link::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    bottom: 2px;
-    width: 0;
-    height: 1px;
-    background: #fff;
-    transform: translateX(-50%);
-    transition: width .25s ease;
-}
-
-.navbar .nav-link:hover::after,
-.navbar .nav-link:focus::after {
-    width: 65%;
-}
-
-.home-content {
-    text-align: center;
-    padding-top: 22px;
-    padding-bottom: 55px;
-}
-
-.hero-divider {
-    width: 100%;
-    margin: 0 auto 34px;
-    border: 0;
-    border-top: 1px solid rgba(255,255,255,.55);
-    opacity: 1;
-}
-
-.hero-title {
-    margin: 0 0 12px;
-    color: #fff;
-    font-family: 'Montserrat', sans-serif;
-    font-size: clamp(54px, 8vw, 90px);
-    line-height: .98;
-    font-weight: 800;
-    letter-spacing: .045em;
-    text-align: center;
-}
-
-.hero-tagline {
-    margin: 0 auto 28px;
-    color: rgba(255,255,255,.72);
-    font-family: 'Montserrat', sans-serif;
-    font-size: 11px;
-    line-height: 1.6;
-    font-weight: 600;
-    letter-spacing: .22em;
-    text-align: center;
-}
-
-.hero-description {
-    max-width: 760px;
-    margin: 0 auto 30px;
-    color: rgba(255,255,255,.82);
-    font-family: 'Montserrat', sans-serif;
-    font-size: 15px;
-    line-height: 1.85;
-    font-weight: 400;
-    text-align: center;
-}
-
-.hours {
-    margin-top: 12px;
-}
-
-.hours h3 {
-    margin: 0 0 5px;
-    color: #fff;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 25px;
-    line-height: 1.2;
-    font-weight: 700;
-}
-
-.hours p {
-    margin: 0;
-    color: rgba(255,255,255,.68);
-    font-family: 'Montserrat', sans-serif;
-    font-size: 13px;
-    font-weight: 500;
-    letter-spacing: .08em;
-    text-transform: uppercase;
-}
-
-.time h4 {
-    margin: 7px 0 0;
-    color: #fff;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    line-height: 1.4;
-    font-weight: 500;
-}
-
-.button {
-    margin-top: 24px;
-}
-
-.bttn1 {
-    min-width: 175px;
-    min-height: 48px;
-    padding: 0 22px;
-    border: 1px solid rgba(255,255,255,.75);
-    border-radius: 999px;
-    background: rgba(255,255,255,.06);
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
-    transition: background .25s ease, transform .25s ease;
-}
-
-.bttn1:hover {
-    background: #fff;
-    transform: translateY(-2px);
-}
-
-.bttn1 a {
-    display: block;
-    color: #fff !important;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 12px !important;
-    line-height: 46px;
-    font-weight: 600 !important;
-    letter-spacing: .10em;
-    text-transform: uppercase;
-    text-decoration: none !important;
-}
-
-.bttn1:hover a {
-    color: #2b211d !important;
-    font-size: 12px !important;
-    font-weight: 600 !important;
-}
-
-@media (max-width: 767px) {
-    body {
-        background-attachment: scroll;
-    }
-
-    .navbar-nav {
-        gap: 3px;
-        padding: 15px 0;
-    }
-
-    .navbar .nav-link,
-    .navbar .nav-link:hover,
-    .navbar .nav-link:focus {
-        font-size: 13px !important;
-    }
-
-    .home-content {
-        padding-top: 12px;
-    }
-
-    .hero-title {
-        font-size: clamp(44px, 15vw, 66px);
-    }
-
-    .hero-tagline {
-        font-size: 9px;
-        letter-spacing: .14em;
-    }
-
-    .hero-description {
-        padding: 0 14px;
-        font-size: 13px;
-        line-height: 1.75;
-    }
-}
-
-/* ===== MARS KAPE NAVBAR ===== */
+/* =========================================================
+   NAVBAR
+========================================================= */
 
 .mars-navbar {
     width: 100%;
-    padding: 32px 0;
-    background: rgba(255, 255, 255, 0.92) !important;
+
+    min-height: 150px;
+
+    padding: 20px 0 !important;
+
+    background-color: #e5e5e5 !important;
+
+    position: relative;
+
+    z-index: 1000;
 }
+
 
 .mars-nav-container {
-    max-width: 1450px;
-    padding-left: 40px;
-    padding-right: 40px;
+    width: 100%;
+
+    max-width: 1500px;
+
+    margin: 0 auto;
+
+    padding-left: 65px !important;
+    padding-right: 65px !important;
+
+    display: flex;
+
+    align-items: center;
 }
 
-/* Full Mars Kape logo */
-.mars-navbar-logo {
-    width: 400px;
-    max-width: 100%;
-    height: auto;
+
+/* =========================
+   BRAND
+========================= */
+
+.mars-brand {
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    margin: 0 !important;
+
+    padding: 0 !important;
+
+    text-decoration: none;
+}
+
+
+/* Round Mars Kape logo */
+
+.mars-logo {
+    width: 92px;
+
+    height: 92px;
+
+    object-fit: contain;
+
     display: block;
 }
 
-/* Navigation */
+
+/* MARS KAPE text */
+
+.mars-brand-name {
+    font-family: "Montserrat", sans-serif;
+
+    font-size: clamp(32px, 3vw, 52px);
+
+    font-weight: 500;
+
+    letter-spacing: 0.02em;
+
+    color: #000;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   NAV LINKS
+========================================================= */
+
+.mars-navbar .navbar-collapse {
+    flex-grow: 1;
+}
+
+
 .mars-navbar .navbar-nav {
     display: flex;
+
     align-items: center;
-    gap: 25px;
+
+    gap: 30px;
+
+    margin-left: auto !important;
 }
+
+
+.mars-navbar .nav-item {
+    margin: 0 !important;
+
+    padding: 0 !important;
+}
+
 
 .mars-navbar .nav-link,
 .mars-navbar .nav-link:visited {
+    position: relative;
+
+    margin: 0 !important;
+
     padding: 8px 0 !important;
 
     font-family: "Montserrat", sans-serif !important;
-    font-size: 17px !important;
-    font-weight: 400 !important;
-    letter-spacing: 0 !important;
 
-    color: #2b211d !important;
+    font-size: 16px !important;
+
+    font-weight: 400 !important;
+
+    letter-spacing: 0;
+
+    color: #2c2927 !important;
+
     text-decoration: none;
 
+    white-space: nowrap;
+
     transform: none !important;
-    transition: opacity 0.2s ease !important;
+
+    transition:
+        color 0.2s ease,
+        opacity 0.2s ease;
 }
 
-/* IMPORTANT — no resizing on hover */
+
+/* IMPORTANT:
+   no font-size or font-weight changes on hover */
+
 .mars-navbar .nav-link:hover,
 .mars-navbar .nav-link:focus,
 .mars-navbar .nav-link:active {
-    font-size: 17px !important;
+    font-size: 16px !important;
+
     font-weight: 400 !important;
+
     color: #000 !important;
+
+    opacity: 0.55;
+
+    padding: 8px 0 !important;
+
     transform: none !important;
-    opacity: 0.65;
 }
 
-/* Remove previous animated underline */
-.mars-navbar .nav-link::after {
-    display: none !important;
+
+/* Active page */
+
+.mars-navbar .nav-link.active {
+    color: #000 !important;
+
+    font-weight: 500 !important;
 }
 
-/* Mobile */
-@media (max-width: 991px) {
-    .mars-navbar {
-        padding: 18px 0;
-    }
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero {
+    min-height: calc(100vh - 150px);
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background-image: url("./bg.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+
+    overflow: hidden;
+}
+
+
+/* Dark layer over the image */
+
+.hero-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.46),
+            rgba(0, 0, 0, 0.55)
+        );
+
+    z-index: 1;
+}
+
+
+.hero-container {
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+}
+
+
+.hero-content {
+    width: 100%;
+
+    max-width: 850px;
+
+    padding: 80px 25px;
+
+    text-align: center;
+
+    color: #fff;
+}
+
+
+/* =========================================================
+   HERO TEXT
+========================================================= */
+
+.hero-eyebrow {
+    margin-bottom: 18px;
+
+    font-size: 11px;
+
+    font-weight: 500;
+
+    letter-spacing: 0.24em;
+
+    color: rgba(255, 255, 255, 0.72);
+}
+
+
+.hero-title {
+    margin: 0;
+
+    font-family: "Montserrat", sans-serif;
+
+    font-size: clamp(58px, 7vw, 100px);
+
+    font-weight: 800;
+
+    line-height: 0.95;
+
+    letter-spacing: 0.045em;
+
+    color: #fff;
+}
+
+
+.hero-subtitle {
+    margin-top: 22px;
+
+    margin-bottom: 25px;
+
+    font-size: 14px;
+
+    font-weight: 500;
+
+    letter-spacing: 0.35em;
+
+    color: rgba(255, 255, 255, 0.92);
+}
+
+
+.hero-description {
+    max-width: 720px;
+
+    margin: 0 auto;
+
+    font-size: 15px;
+
+    font-weight: 400;
+
+    line-height: 1.9;
+
+    color: rgba(255, 255, 255, 0.78);
+}
+
+
+/* Decorative line */
+
+.hero-line {
+    width: 280px;
+
+    max-width: 65%;
+
+    height: 1px;
+
+    margin: 36px auto;
+
+    background-color: rgba(255, 255, 255, 0.55);
+}
+
+
+/* =========================================================
+   STORE HOURS
+========================================================= */
+
+.store-hours {
+    margin-bottom: 30px;
+}
+
+
+.store-hours h2 {
+    margin-bottom: 9px;
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.07em;
+
+    color: #fff;
+}
+
+
+.store-days {
+    margin-bottom: 5px;
+
+    font-size: 11px;
+
+    font-weight: 500;
+
+    letter-spacing: 0.16em;
+
+    color: rgba(255, 255, 255, 0.62);
+}
+
+
+.store-time {
+    margin: 0;
+
+    font-size: 20px;
+
+    font-weight: 500;
+
+    letter-spacing: 0.04em;
+
+    color: #fff;
+}
+
+
+/* =========================================================
+   BUTTON
+========================================================= */
+
+.menu-button {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-width: 210px;
+
+    height: 52px;
+
+    padding: 0 28px;
+
+    border: 1px solid rgba(255, 255, 255, 0.85);
+
+    border-radius: 999px;
+
+    background-color: transparent;
+
+    color: #fff;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.12em;
+
+    text-decoration: none;
+
+    transition:
+        background-color 0.25s ease,
+        color 0.25s ease,
+        transform 0.25s ease;
+}
+
+
+.menu-button:hover {
+    background-color: #fff;
+
+    color: #2c211d;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
 
     .mars-nav-container {
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 35px !important;
+        padding-right: 35px !important;
     }
 
-    .mars-navbar-logo {
-        width: 260px;
+
+    .mars-logo {
+        width: 75px;
+
+        height: 75px;
     }
+
+
+    .mars-brand-name {
+        font-size: 36px;
+    }
+
 
     .mars-navbar .navbar-nav {
-        align-items: flex-start;
-        gap: 5px;
-        padding-top: 20px;
+        gap: 18px;
     }
+
 
     .mars-navbar .nav-link,
     .mars-navbar .nav-link:hover {
         font-size: 14px !important;
     }
+
+}
+
+
+/* =========================================================
+   MOBILE NAVIGATION
+========================================================= */
+
+@media (max-width: 991px) {
+
+    .mars-navbar {
+        min-height: auto;
+
+        padding: 14px 0 !important;
+    }
+
+
+    .mars-nav-container {
+        padding-left: 22px !important;
+        padding-right: 22px !important;
+    }
+
+
+    .mars-logo {
+        width: 62px;
+
+        height: 62px;
+    }
+
+
+    .mars-brand {
+        gap: 12px;
+    }
+
+
+    .mars-brand-name {
+        font-size: 27px;
+    }
+
+
+    .navbar-toggler {
+        margin: 0 !important;
+
+        border: 1px solid rgba(0, 0, 0, 0.3) !important;
+
+        box-shadow: none !important;
+    }
+
+
+    .mars-navbar .navbar-collapse {
+        width: 100%;
+    }
+
+
+    .mars-navbar .navbar-nav {
+        align-items: flex-start;
+
+        gap: 2px;
+
+        padding-top: 18px;
+
+        padding-bottom: 10px;
+    }
+
+
+    .mars-navbar .nav-link,
+    .mars-navbar .nav-link:hover,
+    .mars-navbar .nav-link:focus {
+        padding: 9px 0 !important;
+
+        font-size: 14px !important;
+
+        opacity: 1;
+    }
+
+
+    .hero {
+        min-height: calc(100vh - 90px);
+
+        background-attachment: scroll;
+    }
+
+
+    .hero-content {
+        padding: 70px 20px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 520px) {
+
+    .mars-logo {
+        width: 52px;
+
+        height: 52px;
+    }
+
+
+    .mars-brand-name {
+        font-size: 22px;
+    }
+
+
+    .hero-title {
+        font-size: clamp(48px, 16vw, 68px);
+    }
+
+
+    .hero-eyebrow {
+        font-size: 8px;
+
+        letter-spacing: 0.16em;
+    }
+
+
+    .hero-subtitle {
+        font-size: 10px;
+
+        letter-spacing: 0.22em;
+    }
+
+
+    .hero-description {
+        font-size: 13px;
+
+        line-height: 1.75;
+    }
+
+
+    .hero-line {
+        margin: 28px auto;
+    }
+
+
+    .store-hours h2 {
+        font-size: 15px;
+    }
+
+
+    .store-time {
+        font-size: 17px;
+    }
+
+
+    .menu-button {
+        min-width: 185px;
+
+        height: 48px;
+
+        font-size: 10px;
+    }
+
 }

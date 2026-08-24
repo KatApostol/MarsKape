@@ -354,3 +354,91 @@ body {
         line-height: 1.75;
     }
 }
+
+/* ===== MARS KAPE NAVBAR ===== */
+
+.mars-navbar {
+    width: 100%;
+    padding: 32px 0;
+    background: rgba(255, 255, 255, 0.92) !important;
+}
+
+.mars-nav-container {
+    max-width: 1450px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+/* Full Mars Kape logo */
+.mars-navbar-logo {
+    width: 400px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Navigation */
+.mars-navbar .navbar-nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.mars-navbar .nav-link,
+.mars-navbar .nav-link:visited {
+    padding: 8px 0 !important;
+
+    font-family: "Montserrat", sans-serif !important;
+    font-size: 17px !important;
+    font-weight: 400 !important;
+    letter-spacing: 0 !important;
+
+    color: #2b211d !important;
+    text-decoration: none;
+
+    transform: none !important;
+    transition: opacity 0.2s ease !important;
+}
+
+/* IMPORTANT — no resizing on hover */
+.mars-navbar .nav-link:hover,
+.mars-navbar .nav-link:focus,
+.mars-navbar .nav-link:active {
+    font-size: 17px !important;
+    font-weight: 400 !important;
+    color: #000 !important;
+    transform: none !important;
+    opacity: 0.65;
+}
+
+/* Remove previous animated underline */
+.mars-navbar .nav-link::after {
+    display: none !important;
+}
+
+/* Mobile */
+@media (max-width: 991px) {
+    .mars-navbar {
+        padding: 18px 0;
+    }
+
+    .mars-nav-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .mars-navbar-logo {
+        width: 260px;
+    }
+
+    .mars-navbar .navbar-nav {
+        align-items: flex-start;
+        gap: 5px;
+        padding-top: 20px;
+    }
+
+    .mars-navbar .nav-link,
+    .mars-navbar .nav-link:hover {
+        font-size: 14px !important;
+    }
+}

@@ -29,17 +29,14 @@ body {
 
 
 /* =========================================================
-   NAVBAR
+   NAVBAR — SLIMMER VERSION
 ========================================================= */
 
 .mars-navbar {
     width: 100%;
-    min-height: 145px;
-
+    min-height: 105px;
     padding: 0 !important;
-
     background-color: #e5e5e5 !important;
-
     position: relative;
     z-index: 1000;
 }
@@ -47,7 +44,6 @@ body {
 .mars-nav-container {
     width: 100%;
     max-width: 1450px;
-
     margin: 0 auto;
 
     padding-left: 55px !important;
@@ -57,26 +53,21 @@ body {
     align-items: center;
 }
 
-
-/* =========================================================
-   BRAND / LOGO
-========================================================= */
+/* BRAND / LOGO */
 
 .mars-brand {
     display: flex;
     align-items: center;
-
     margin: 0 !important;
     padding: 0 !important;
-
     text-decoration: none;
 }
 
 .mars-logo {
     display: block;
 
-    width: 360px;
-    height: 95px;
+    width: 300px;
+    height: 70px;
 
     object-fit: contain;
     object-position: left center;
@@ -84,7 +75,6 @@ body {
     margin: 0;
     padding: 0;
 
-    /* logo2.png is white, so this makes it black */
     filter: brightness(0);
 
     transition: opacity 0.2s ease;
@@ -93,7 +83,6 @@ body {
 .mars-brand:hover .mars-logo {
     opacity: 0.72;
 }
-
 
 /* =========================================================
    NAVIGATION

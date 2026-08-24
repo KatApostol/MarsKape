@@ -1,12 +1,6 @@
 /* =========================================================
-   MARS KAPE
-   HOMEPAGE
-   ========================================================= */
-
-
-/* =========================
-   GLOBAL
-========================= */
+   MARS KAPE — HOMEPAGE
+========================================================= */
 
 * {
     margin: 0;
@@ -14,26 +8,20 @@
     box-sizing: border-box;
 }
 
-
 html,
 body {
     width: 100%;
     min-height: 100%;
 }
 
-
 html {
     scroll-behavior: smooth;
 }
 
-
 body {
     margin: 0;
-
     font-family: "Montserrat", sans-serif;
-
-    background-color: #111;
-
+    background: #111;
     overflow-x: hidden;
 }
 
@@ -44,23 +32,20 @@ body {
 
 .mars-navbar {
     width: 100%;
+    height: 150px;
 
-    min-height: 150px;
+    padding: 0 !important;
 
-    padding: 20px 0 !important;
-
-    background-color: #e5e5e5 !important;
+    background: #e3e3e3 !important;
 
     position: relative;
-
     z-index: 1000;
 }
 
-
 .mars-nav-container {
     width: 100%;
-
     max-width: 1500px;
+    height: 100%;
 
     margin: 0 auto;
 
@@ -68,143 +53,99 @@ body {
     padding-right: 65px !important;
 
     display: flex;
-
     align-items: center;
-}
-
-
-/* =========================
-   BRAND
-========================= */
-
-.mars-brand {
-    display: flex;
-
-    align-items: center;
-
-    gap: 18px;
-
-    margin: 0 !important;
-
-    padding: 0 !important;
-
-    text-decoration: none;
-}
-
-
-/* Round Mars Kape logo */
-
-.mars-logo {
-    width: 92px;
-
-    height: 92px;
-
-    object-fit: contain;
-
-    display: block;
-}
-
-
-/* MARS KAPE text */
-
-.mars-brand-name {
-    font-family: "Montserrat", sans-serif;
-
-    font-size: clamp(32px, 3vw, 52px);
-
-    font-weight: 500;
-
-    letter-spacing: 0.02em;
-
-    color: #000;
-
-    white-space: nowrap;
 }
 
 
 /* =========================================================
-   NAV LINKS
+   LOGO
+========================================================= */
+
+.mars-brand {
+    display: flex;
+    align-items: center;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    height: 100px;
+}
+
+.mars-logo {
+    display: block;
+
+    width: 430px;
+    height: 100px;
+
+    object-fit: contain;
+    object-position: left center;
+
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
+/* =========================================================
+   NAVIGATION
 ========================================================= */
 
 .mars-navbar .navbar-collapse {
     flex-grow: 1;
 }
 
-
 .mars-navbar .navbar-nav {
     display: flex;
-
     align-items: center;
 
-    gap: 30px;
-
     margin-left: auto !important;
-}
 
+    gap: 30px;
+}
 
 .mars-navbar .nav-item {
     margin: 0 !important;
-
     padding: 0 !important;
 }
 
-
 .mars-navbar .nav-link,
 .mars-navbar .nav-link:visited {
-    position: relative;
-
     margin: 0 !important;
+    padding: 10px 0 !important;
 
-    padding: 8px 0 !important;
+    color: #292929 !important;
 
     font-family: "Montserrat", sans-serif !important;
-
     font-size: 16px !important;
-
     font-weight: 400 !important;
 
-    letter-spacing: 0;
-
-    color: #2c2927 !important;
-
-    text-decoration: none;
+    line-height: 1 !important;
+    letter-spacing: 0 !important;
 
     white-space: nowrap;
 
+    text-decoration: none !important;
+
     transform: none !important;
 
-    transition:
-        color 0.2s ease,
-        opacity 0.2s ease;
+    transition: opacity 0.2s ease !important;
 }
 
 
-/* IMPORTANT:
-   no font-size or font-weight changes on hover */
+/* NO enlarging when hovering */
 
 .mars-navbar .nav-link:hover,
 .mars-navbar .nav-link:focus,
 .mars-navbar .nav-link:active {
-    font-size: 16px !important;
+    color: #000 !important;
 
+    font-size: 16px !important;
     font-weight: 400 !important;
 
-    color: #000 !important;
-
-    opacity: 0.55;
-
-    padding: 8px 0 !important;
+    padding: 10px 0 !important;
 
     transform: none !important;
-}
 
-
-/* Active page */
-
-.mars-navbar .nav-link.active {
-    color: #000 !important;
-
-    font-weight: 500 !important;
+    opacity: 0.55;
 }
 
 
@@ -213,46 +154,31 @@ body {
 ========================================================= */
 
 .hero {
-    min-height: calc(100vh - 150px);
-
     position: relative;
 
+    min-height: calc(100vh - 150px);
+
     display: flex;
-
     align-items: center;
-
     justify-content: center;
 
     background-image: url("./bg.jpg");
-
     background-size: cover;
-
     background-position: center;
-
     background-repeat: no-repeat;
-
-    background-attachment: fixed;
 
     overflow: hidden;
 }
-
-
-/* Dark layer over the image */
 
 .hero-overlay {
     position: absolute;
 
     inset: 0;
 
-    background:
-        linear-gradient(
-            rgba(0, 0, 0, 0.46),
-            rgba(0, 0, 0, 0.55)
-        );
+    background: rgba(0, 0, 0, 0.53);
 
     z-index: 1;
 }
-
 
 .hero-container {
     position: relative;
@@ -262,43 +188,40 @@ body {
     width: 100%;
 
     display: flex;
-
     justify-content: center;
 }
 
-
 .hero-content {
     width: 100%;
-
     max-width: 850px;
 
-    padding: 80px 25px;
+    padding: 70px 25px;
 
     text-align: center;
 
-    color: #fff;
+    color: white;
 }
 
 
 /* =========================================================
-   HERO TEXT
+   HERO TYPOGRAPHY
 ========================================================= */
 
 .hero-eyebrow {
-    margin-bottom: 18px;
-
-    font-size: 11px;
-
-    font-weight: 500;
-
-    letter-spacing: 0.24em;
+    margin: 0 0 18px;
 
     color: rgba(255, 255, 255, 0.72);
-}
 
+    font-size: 11px;
+    font-weight: 500;
+
+    letter-spacing: 0.22em;
+}
 
 .hero-title {
     margin: 0;
+
+    color: #fff;
 
     font-family: "Montserrat", sans-serif;
 
@@ -309,53 +232,46 @@ body {
     line-height: 0.95;
 
     letter-spacing: 0.045em;
-
-    color: #fff;
 }
-
 
 .hero-subtitle {
-    margin-top: 22px;
+    margin: 22px 0 25px;
 
-    margin-bottom: 25px;
+    color: rgba(255, 255, 255, 0.95);
 
     font-size: 14px;
-
     font-weight: 500;
 
-    letter-spacing: 0.35em;
-
-    color: rgba(255, 255, 255, 0.92);
+    letter-spacing: 0.30em;
 }
-
 
 .hero-description {
     max-width: 720px;
 
     margin: 0 auto;
 
-    font-size: 15px;
+    color: rgba(255, 255, 255, 0.80);
 
+    font-size: 15px;
     font-weight: 400;
 
     line-height: 1.9;
-
-    color: rgba(255, 255, 255, 0.78);
 }
 
 
-/* Decorative line */
+/* =========================================================
+   DIVIDER
+========================================================= */
 
 .hero-line {
-    width: 280px;
-
+    width: 260px;
     max-width: 65%;
 
     height: 1px;
 
-    margin: 36px auto;
+    margin: 34px auto;
 
-    background-color: rgba(255, 255, 255, 0.55);
+    background: rgba(255, 255, 255, 0.50);
 }
 
 
@@ -367,43 +283,35 @@ body {
     margin-bottom: 30px;
 }
 
-
 .store-hours h2 {
-    margin-bottom: 9px;
-
-    font-size: 17px;
-
-    font-weight: 600;
-
-    letter-spacing: 0.07em;
+    margin: 0 0 8px;
 
     color: #fff;
-}
 
+    font-size: 17px;
+    font-weight: 600;
+
+    letter-spacing: 0.08em;
+}
 
 .store-days {
-    margin-bottom: 5px;
+    margin: 0 0 5px;
+
+    color: rgba(255, 255, 255, 0.65);
 
     font-size: 11px;
-
     font-weight: 500;
 
-    letter-spacing: 0.16em;
-
-    color: rgba(255, 255, 255, 0.62);
+    letter-spacing: 0.15em;
 }
-
 
 .store-time {
     margin: 0;
 
-    font-size: 20px;
-
-    font-weight: 500;
-
-    letter-spacing: 0.04em;
-
     color: #fff;
+
+    font-size: 19px;
+    font-weight: 500;
 }
 
 
@@ -415,25 +323,22 @@ body {
     display: inline-flex;
 
     align-items: center;
-
     justify-content: center;
 
     min-width: 210px;
-
     height: 52px;
 
     padding: 0 28px;
 
     border: 1px solid rgba(255, 255, 255, 0.85);
 
-    border-radius: 999px;
+    border-radius: 100px;
 
-    background-color: transparent;
+    background: transparent;
 
     color: #fff;
 
     font-size: 11px;
-
     font-weight: 600;
 
     letter-spacing: 0.12em;
@@ -441,93 +346,73 @@ body {
     text-decoration: none;
 
     transition:
-        background-color 0.25s ease,
+        background 0.25s ease,
         color 0.25s ease,
         transform 0.25s ease;
 }
 
-
 .menu-button:hover {
-    background-color: #fff;
+    background: #fff;
 
-    color: #2c211d;
+    color: #29211d;
 
     transform: translateY(-2px);
 }
 
 
 /* =========================================================
-   TABLET
+   MEDIUM DESKTOP / TABLET
 ========================================================= */
 
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
 
     .mars-nav-container {
         padding-left: 35px !important;
         padding-right: 35px !important;
     }
 
-
     .mars-logo {
-        width: 75px;
-
-        height: 75px;
+        width: 340px;
     }
-
-
-    .mars-brand-name {
-        font-size: 36px;
-    }
-
 
     .mars-navbar .navbar-nav {
-        gap: 18px;
+        gap: 20px;
     }
-
 
     .mars-navbar .nav-link,
     .mars-navbar .nav-link:hover {
         font-size: 14px !important;
     }
-
 }
 
 
 /* =========================================================
-   MOBILE NAVIGATION
+   MOBILE
 ========================================================= */
 
 @media (max-width: 991px) {
 
     .mars-navbar {
-        min-height: auto;
+        height: auto;
 
-        padding: 14px 0 !important;
+        min-height: 100px;
+
+        padding: 12px 0 !important;
     }
-
 
     .mars-nav-container {
         padding-left: 22px !important;
         padding-right: 22px !important;
     }
 
+    .mars-brand {
+        height: 70px;
+    }
 
     .mars-logo {
-        width: 62px;
-
-        height: 62px;
+        width: 260px;
+        height: 70px;
     }
-
-
-    .mars-brand {
-        gap: 12px;
-    }
-
-
-    .mars-brand-name {
-        font-size: 27px;
-    }
-
 
     .navbar-toggler {
         margin: 0 !important;
@@ -537,22 +422,17 @@ body {
         box-shadow: none !important;
     }
 
-
     .mars-navbar .navbar-collapse {
-        width: 100%;
+        flex-basis: 100%;
     }
-
 
     .mars-navbar .navbar-nav {
         align-items: flex-start;
 
-        gap: 2px;
+        gap: 0;
 
-        padding-top: 18px;
-
-        padding-bottom: 10px;
+        padding: 15px 0 8px;
     }
-
 
     .mars-navbar .nav-link,
     .mars-navbar .nav-link:hover,
@@ -564,18 +444,13 @@ body {
         opacity: 1;
     }
 
-
     .hero {
-        min-height: calc(100vh - 90px);
-
-        background-attachment: scroll;
+        min-height: calc(100vh - 100px);
     }
-
 
     .hero-content {
-        padding: 70px 20px;
+        padding: 65px 20px;
     }
-
 }
 
 
@@ -585,36 +460,30 @@ body {
 
 @media (max-width: 520px) {
 
+    .mars-brand {
+        height: 55px;
+    }
+
     .mars-logo {
-        width: 52px;
-
-        height: 52px;
+        width: 205px;
+        height: 55px;
     }
-
-
-    .mars-brand-name {
-        font-size: 22px;
-    }
-
 
     .hero-title {
-        font-size: clamp(48px, 16vw, 68px);
+        font-size: 52px;
     }
-
 
     .hero-eyebrow {
         font-size: 8px;
 
-        letter-spacing: 0.16em;
+        letter-spacing: 0.14em;
     }
-
 
     .hero-subtitle {
         font-size: 10px;
 
-        letter-spacing: 0.22em;
+        letter-spacing: 0.20em;
     }
-
 
     .hero-description {
         font-size: 13px;
@@ -622,21 +491,17 @@ body {
         line-height: 1.75;
     }
 
-
     .hero-line {
         margin: 28px auto;
     }
-
 
     .store-hours h2 {
         font-size: 15px;
     }
 
-
     .store-time {
         font-size: 17px;
     }
-
 
     .menu-button {
         min-width: 185px;
@@ -645,5 +510,4 @@ body {
 
         font-size: 10px;
     }
-
 }

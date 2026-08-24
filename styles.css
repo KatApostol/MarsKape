@@ -29,14 +29,18 @@ body {
 
 
 /* =========================================================
-   NAVBAR — SLIMMER VERSION
+   NAVBAR
 ========================================================= */
 
 .mars-navbar {
     width: 100%;
-    min-height: 105px;
+    height: 90px;
+    min-height: 90px;
+
     padding: 0 !important;
+
     background-color: #e5e5e5 !important;
+
     position: relative;
     z-index: 1000;
 }
@@ -44,6 +48,8 @@ body {
 .mars-nav-container {
     width: 100%;
     max-width: 1450px;
+    height: 100%;
+
     margin: 0 auto;
 
     padding-left: 55px !important;
@@ -53,21 +59,26 @@ body {
     align-items: center;
 }
 
-/* BRAND / LOGO */
+
+/* =========================================================
+   BRAND / LOGO
+========================================================= */
 
 .mars-brand {
     display: flex;
     align-items: center;
+
     margin: 0 !important;
     padding: 0 !important;
+
     text-decoration: none;
 }
 
 .mars-logo {
     display: block;
 
-    width: 300px;
-    height: 70px;
+    width: 285px;
+    height: 62px;
 
     object-fit: contain;
     object-position: left center;
@@ -75,14 +86,16 @@ body {
     margin: 0;
     padding: 0;
 
+    /* Converts white logo2.png to black */
     filter: brightness(0);
 
     transition: opacity 0.2s ease;
 }
 
 .mars-brand:hover .mars-logo {
-    opacity: 0.72;
+    opacity: 0.7;
 }
+
 
 /* =========================================================
    NAVIGATION
@@ -108,8 +121,6 @@ body {
 
 .mars-navbar .nav-link,
 .mars-navbar .nav-link:visited {
-    position: relative;
-
     margin: 0 !important;
     padding: 8px 0 !important;
 
@@ -120,7 +131,6 @@ body {
     font-weight: 400 !important;
 
     line-height: 1.2;
-    letter-spacing: 0;
 
     white-space: nowrap;
 
@@ -142,7 +152,7 @@ body {
 }
 
 
-/* Hover — no size change */
+/* Hover — does NOT change size */
 
 .mars-navbar .nav-link:hover,
 .mars-navbar .nav-link:focus,
@@ -159,9 +169,6 @@ body {
     opacity: 0.55;
 }
 
-
-/* Remove any Bootstrap / old underline effects */
-
 .mars-navbar .nav-link::after {
     display: none !important;
 }
@@ -174,7 +181,7 @@ body {
 .hero {
     position: relative;
 
-    min-height: calc(100vh - 145px);
+    min-height: calc(100vh - 90px);
 
     display: flex;
     align-items: center;
@@ -195,11 +202,10 @@ body {
     position: absolute;
     inset: 0;
 
-    background:
-        linear-gradient(
-            rgba(0, 0, 0, 0.48),
-            rgba(0, 0, 0, 0.56)
-        );
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.48),
+        rgba(0, 0, 0, 0.56)
+    );
 
     z-index: 1;
 }
@@ -221,9 +227,9 @@ body {
     width: 100%;
     max-width: 820px;
 
-    padding: 70px 25px;
+    padding: 60px 25px;
 
-    color: white;
+    color: #fff;
 
     text-align: center;
 }
@@ -308,7 +314,7 @@ body {
 
     height: 1px;
 
-    margin: 32px auto;
+    margin: 30px auto;
 
     background-color: rgba(255, 255, 255, 0.5);
 }
@@ -319,7 +325,7 @@ body {
 ========================================================= */
 
 .store-hours {
-    margin-bottom: 28px;
+    margin-bottom: 26px;
 }
 
 
@@ -366,7 +372,7 @@ body {
 
 
 /* =========================================================
-   CTA BUTTON
+   BUTTON
 ========================================================= */
 
 .menu-button {
@@ -376,7 +382,7 @@ body {
     justify-content: center;
 
     min-width: 210px;
-    height: 50px;
+    height: 48px;
 
     padding: 0 28px;
 
@@ -424,12 +430,12 @@ body {
     }
 
     .mars-logo {
-        width: 300px;
-        height: 82px;
+        width: 250px;
+        height: 58px;
     }
 
     .mars-navbar .navbar-nav {
-        gap: 18px;
+        gap: 20px;
     }
 
     .mars-navbar .nav-link,
@@ -437,20 +443,20 @@ body {
     .mars-navbar .nav-link:focus {
         font-size: 13px !important;
     }
-
 }
 
 
 /* =========================================================
-   TABLET / MOBILE NAVBAR
+   TABLET / MOBILE
 ========================================================= */
 
 @media (max-width: 991px) {
 
     .mars-navbar {
-        min-height: auto;
+        height: auto;
+        min-height: 75px;
 
-        padding: 12px 0 !important;
+        padding: 8px 0 !important;
     }
 
     .mars-nav-container {
@@ -459,14 +465,14 @@ body {
     }
 
     .mars-logo {
-        width: 230px;
-        height: 65px;
+        width: 215px;
+        height: 55px;
     }
 
     .navbar-toggler {
         margin: 0 !important;
 
-        padding: 7px 10px !important;
+        padding: 6px 9px !important;
 
         border: 1px solid rgba(0, 0, 0, 0.3) !important;
 
@@ -482,14 +488,14 @@ body {
 
         gap: 0;
 
-        padding-top: 16px;
-        padding-bottom: 8px;
+        padding-top: 12px;
+        padding-bottom: 6px;
     }
 
     .mars-navbar .nav-link,
     .mars-navbar .nav-link:hover,
     .mars-navbar .nav-link:focus {
-        padding: 9px 0 !important;
+        padding: 8px 0 !important;
 
         font-size: 14px !important;
 
@@ -497,13 +503,12 @@ body {
     }
 
     .hero {
-        min-height: calc(100vh - 90px);
+        min-height: calc(100vh - 75px);
     }
 
     .hero-content {
-        padding: 65px 20px;
+        padding: 55px 20px;
     }
-
 }
 
 
@@ -513,13 +518,21 @@ body {
 
 @media (max-width: 520px) {
 
+    .mars-navbar {
+        min-height: 68px;
+    }
+
     .mars-logo {
-        width: 185px;
-        height: 55px;
+        width: 175px;
+        height: 48px;
+    }
+
+    .hero {
+        min-height: calc(100vh - 68px);
     }
 
     .hero-content {
-        padding: 55px 18px;
+        padding: 50px 18px;
     }
 
     .hero-title {
@@ -542,7 +555,7 @@ body {
     }
 
     .hero-line {
-        margin: 28px auto;
+        margin: 26px auto;
     }
 
     .store-hours h2 {
@@ -555,9 +568,8 @@ body {
 
     .menu-button {
         min-width: 185px;
-        height: 48px;
+        height: 46px;
 
         font-size: 10px;
     }
-
 }

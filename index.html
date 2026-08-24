@@ -1,93 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-     <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Mars Kape</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-     <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mars Kape</title>
+
+    <!-- Bootstrap -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- Montserrat -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
+
+
 <body>
 
+    <!-- =========================
+         NAVBAR
+    ========================== -->
     <nav class="navbar navbar-expand-lg mars-navbar">
-    <div class="container mars-nav-container">
 
-        <a class="navbar-brand" href="index.html">
-            <img src="mars no background.png"
-                 class="mars-navbar-logo"
-                 alt="Mars Kape">
-        </a>
+        <div class="container-fluid mars-nav-container">
 
-        <button class="navbar-toggler" type="button"
+            <!-- Brand -->
+            <a class="navbar-brand mars-brand" href="index.html">
+
+                <img
+                    src="logo.png"
+                    class="mars-logo"
+                    alt="Mars Kape Logo"
+                >
+
+                <span class="mars-brand-name">
+                    MARS KAPE
+                </span>
+
+            </a>
+
+
+            <!-- Mobile Button -->
+            <button
+                class="navbar-toggler"
+                type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#navbarNav"
                 aria-controls="navbarNav"
                 aria-expanded="false"
-                aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link active" href="index.html">HOME</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="menu.html">MENU</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="location.html">LOCATION</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">CONTACTS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="feedback.html">FEEDBACK</a>
-                </li>
-            </ul>
+
+            <!-- Navigation -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">
+                            HOME
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">
+                            MENU
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="location.html">
+                            LOCATION
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">
+                            CONTACTS
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="feedback.html">
+                            FEEDBACK
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
         </div>
 
-    </div>
-</nav>
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-md-12 home-content">
-                    <hr class="hero-divider">
-                    <div class="center-content">
-                    <h1 class="hero-title">MARS KAPE</h1>
-                    <p class="hero-tagline">INDUSTRIAL-CHIC COFFEE · TRECE MARTIRES CITY</p>
-                    </div>
-                    <br>
-                    <p class="hero-description">
-                        Mars Kape is an industrial-chic coffee shop with a minimalist atmosphere.
-                        Supporting local coffee farmers, we serve affordable premium coffee in
-                        Trece Martires City, Cavite. Since 2021, Mars Kape has continued brewing
-                        coffee made for good conversations and everyday moments.
-                    </p>
-                    <br>
-                    <div class="hours">
-                       <h3>Store Hours</h3>
-                       <p>Mon - Sat</p>
-                    </div>
-                    <div class="time">
-                       <h4>1:00pm to 8:00pm</h4>
-                    </div>
-                    <br>
-                    
-                    <div class="button">
-                    <button class="bttn1">
-                         <a href="menu.html">Explore the Menu</a>
-                    </button>
-                    </div>
-               </div>
-          </div>
-     </div>
+    </nav>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- =========================
+         HERO
+    ========================== -->
+    <main class="hero">
+
+        <div class="hero-overlay"></div>
+
+        <div class="container hero-container">
+
+            <div class="hero-content">
+
+                <p class="hero-eyebrow">
+                    INDUSTRIAL-CHIC COFFEE · TRECE MARTIRES CITY
+                </p>
+
+                <h1 class="hero-title">
+                    MARS KAPE
+                </h1>
+
+                <p class="hero-subtitle">
+                    GOOD COFFEE, GOOD MOOD
+                </p>
+
+                <p class="hero-description">
+                    Mars Kape is an industrial-chic coffee shop with a
+                    minimalist atmosphere. Supporting local coffee farmers,
+                    we serve affordable premium coffee in Trece Martires City,
+                    Cavite. Since 2021, Mars Kape has continued brewing coffee
+                    made for good conversations and everyday moments.
+                </p>
+
+
+                <div class="hero-line"></div>
+
+
+                <!-- Store Hours -->
+                <div class="store-hours">
+
+                    <h2>
+                        STORE HOURS
+                    </h2>
+
+                    <p class="store-days">
+                        MONDAY – SATURDAY
+                    </p>
+
+                    <p class="store-time">
+                        1:00 PM – 8:00 PM
+                    </p>
+
+                </div>
+
+
+                <!-- CTA -->
+                <a href="menu.html" class="menu-button">
+                    EXPLORE OUR MENU
+                </a>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- Bootstrap JS -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+    </script>
 
 </body>
+
 </html>
